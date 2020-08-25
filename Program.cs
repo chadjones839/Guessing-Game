@@ -13,8 +13,17 @@ namespace GuessingGame
         {
             Console.Write("Guess the Secret Number!! ");
             string answer = Console.ReadLine();
-            Console.Write("You Guessed ");
-            Console.Write(answer);
+            string secretNumber = "42";
+
+            if (answer != secretNumber)
+            {
+                Console.Write("WRONG!! Guess again! ");
+                answer = Console.ReadLine();
+            }
+            else
+            {
+                Console.Write("You got it! What, do you want a ribbon or something? Now get lost! ");
+            }
         }
 
     }
