@@ -18,7 +18,10 @@ namespace GuessingGame
 
             while (answer != secretNumber && ++count < 4)
             {
-                Console.Write("WRONG!! Guess again! ");
+                Console.Write("WRONG!! ");
+                Console.Write(answer);
+                Console.Write(" isn't even close! ");
+                Console.Write("Guess again! ");
                 answer = Console.ReadLine();
             }
             if (answer == secretNumber)
